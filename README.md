@@ -16,3 +16,4 @@ This project explores data related to bike share systems for three major cities 
 ### Credits
 * The template of bikeshare.py is provided by [Udacity](https://www.udacity.com/).
 * The .csv files are provided by [Motivate](https://www.motivateco.com/).
+* The repository has been copied from [udacity/pdsnd_github](https://github.com/udacity/pdsnd_github.git).
