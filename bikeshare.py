@@ -9,7 +9,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def hms(seconds):
-    """calculate hours, minutes, seconds from seconds"""
+    """Calculate hours, minutes, seconds from seconds"""
+
     a=str(seconds//3600)
     b=str((seconds%3600)//60)
     c=str((seconds%3600)%60)
@@ -17,8 +18,7 @@ def hms(seconds):
     return d
 
 def get_filters():
-    """
-    Asks user to specify a city, month, and day to analyze.
+    """Asks user to specify a city, month, and day to analyze.
 
     Returns:
         (str) city - name of the city to analyze
@@ -78,8 +78,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
-    """
-    Loads data for the specified city and filters by month and day if applicable.
+    """Loads data for the specified city and filters by month and day if applicable.
 
     Args:
         (str) city - name of the city to analyze
@@ -222,6 +221,7 @@ def user_stats(df):
 
 def show_data(df):
     """Prompt the user if they want to see 5 lines of raw data"""
+
     data_display = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
     if data_display.lower() != 'yes':
         exit()
